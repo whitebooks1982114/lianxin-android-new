@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+          <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+
+            app:titleTextColor="@color/colorBlack"
+
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToolBar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:navigationIcon="@drawable/usermenu">
+
+        </android.support.v7.widget.Toolbar>
+            </FrameLayout>
+            <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+            </FrameLayout>
+
+
+             <RadioGroup
+                 android:id="@+id/tabs"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:background="@color/colorToolBar">
+                <RadioButton
+            android:id="@+id/news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="要闻动态"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableTop="@drawable/news"/>
+                <RadioButton
+            android:id="@+id/alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="通知提醒"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableTop="@drawable/alarm"/>
+                <RadioButton
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="闯关答题"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableTop="@drawable/test"/>
+        <RadioButton
+            android:id="@+id/wiki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="廉政百科"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableTop="@drawable/wiki"/>
+                <RadioButton
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="积分商城"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableTop="@drawable/masterpiece"/>
+              </RadioGroup>
+          </LinearLayout>
+        </FrameLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:menu="@menu/user"
+        app:headerLayout="@layout/nav_header"/>
+
+</android.support.v4.widget.DrawerLayout>

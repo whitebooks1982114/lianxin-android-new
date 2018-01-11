@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/gp1"
+        android:checkableBehavior="none">
+        <item android:id="@+id/sign_and_login"
+            android:title="注册与登录"
+            android:icon="@drawable/register"/>
+        <item android:id="@+id/userchange"
+        android:icon="@drawable/settings"
+        android:title="用户信息变更" />
+        <item android:id="@+id/userachievment"
+            android:icon="@drawable/trophy"
+            android:title="个人成就" />
+        <item android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="退出登录" />
+        <item android:id="@+id/mail"
+            android:icon="@drawable/contact"
+            android:title="举报邮箱" />
+    </group>
+    <group android:id="@+id/gp2">
+        <item android:title="APP缺陷与建议联系方式："/>
+        <item android:title="changxinlianxin@163.com" />
+
+
+    </group>
+</menu>

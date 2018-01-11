@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/shop_rv_item_sdv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/shop_item_name_tv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/shop_rv_item_sdv"/>
+    <TextView
+        android:id="@+id/shop_item_quantity_tv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/shop_rv_item_sdv"
+        android:layout_below="@+id/shop_item_name_tv"
+        android:layout_marginTop="30dp"/>
+
+    <ImageButton
+        android:id="@+id/shop_item_minus_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/minus_sy"
+        android:layout_alignTop="@+id/shop_item_quantity_tv"
+        android:layout_alignLeft="@+id/shop_item_add_btn"
+        android:layout_alignParentRight="true"/>
+      <TextView
+          android:id="@+id/shop_item_exchange_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="15sp"
+          android:gravity="center"
+          android:text="0"
+          android:layout_alignRight="@+id/shop_item_minus_btn"
+          android:layout_below="@+id/shop_item_add_btn"
+          android:layout_alignLeft="@+id/shop_item_minus_btn"
+          android:layout_above="@+id/shop_item_minus_btn"/>
+
+    <ImageButton
+        android:id="@+id/shop_item_add_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/add_sy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

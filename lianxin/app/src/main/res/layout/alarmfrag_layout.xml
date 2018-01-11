@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+   <RelativeLayout
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageButton
+           android:id="@+id/alarm_notice_btn"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_alignParentLeft="true"
+           android:src="@drawable/notice"
+           android:background="@android:color/transparent"/>
+       <TextView
+           android:id="@+id/alarm_notice_tv"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:text="通知"
+           android:textSize="20sp"
+           android:layout_below="@+id/alarm_notice_btn"
+           android:gravity="center"
+           />
+       <ImageButton
+           android:id="@+id/alarm_alarm_btn"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/alarm1"
+           android:background="@android:color/transparent"/>
+       <TextView
+           android:id="@+id/alarm_alarm_tv"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:text="提醒"
+           android:textSize="20sp"
+           android:layout_below="@+id/alarm_alarm_btn"
+           android:layout_alignLeft="@+id/alarm_alarm_btn"
+           android:gravity="center"
+           />
+
+   </RelativeLayout>
+
+
+</ScrollView>

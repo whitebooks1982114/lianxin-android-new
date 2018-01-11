@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c1c3c7</color>
+    <color name="colorPrimaryDark">#509fde</color>
+    <color name="colorAccent">#80bff2</color>
+    <color name="colorToolBar">#dae2e0</color>
+    <color name="colorBlack">#000</color>
+    <color name="searchBackground">#d6e7ed</color>
+</resources>

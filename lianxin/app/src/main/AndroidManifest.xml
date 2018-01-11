@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.whitebooks.lianxin_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".utilclass.MyApplication">
+        <activity
+            android:name=".Main"
+            android:label="廉兴连心">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.Mail_Inbox"/>
+        <activity android:name=".activities.Mail_Content"/>
+        <activity android:name=".activities.News_Image_Content"/>
+        <activity android:name=".activities.News_Text_Content"/>
+        <activity android:name=".activities.News_Vedio_Content"/>
+        <activity android:name=".activities.User_Setting"/>
+        <activity android:name=".activities.NoticeDir"/>
+        <activity android:name=".activities.AlarmDir"/>
+        <activity android:name=".activities.Notice_Content"/>
+        <activity android:name=".activities.Alarm_Content"/>
+        <activity android:name=".activities.Alarm_Add"/>
+        <activity android:name=".activities.LianKownledge"/>
+        <activity android:name=".activities.LianAdd"/>
+        <activity android:name=".activities.LianContent"/>
+        <activity android:name=".activities.LianKetang"/>
+        <activity android:name=".activities.LianKetangContent"/>
+        <activity android:name=".activities.LianKetangView"/>
+        <activity android:name=".activities.Question"/>
+        <activity android:name=".activities.Result"/>
+        <service android:name=".service.LongRunTimeServie"/>
+        <service android:name=".service.NoticeRunTimeService"/>
+        <receiver android:name=".broadcast.AlarmRecier"/>
+        <receiver android:name=".broadcast.NoticeReciver"/>
+    </application>
+
+</manifest>

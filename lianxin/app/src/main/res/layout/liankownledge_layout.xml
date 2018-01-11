@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lianzhishisv"
+        android:inputType="textFilter"
+        android:queryHint="请输入查找的内容"
+        android:imeOptions="actionSearch"
+        android:background="@color/searchBackground"/>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_marginTop="50dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  <android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/lianzhishi_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <com.baoyz.swipemenulistview.SwipeMenuListView
+      android:id="@+id/lianzhishi_listview"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+  </LinearLayout>
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/lianzhishi_floatback"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="30dp"
+    android:layout_marginBottom="30dp"
+    android:src="@drawable/back"
+    android:elevation="8dp"/>
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/lianzhishi_add_floatback"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|start"
+    android:layout_margin="30dp"
+    android:layout_marginBottom="30dp"
+    android:src="@drawable/add"
+    android:elevation="8dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

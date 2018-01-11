@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <ImageButton
+            android:id="@+id/recievebox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             android:src="@drawable/inbox"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收件箱"
+            android:layout_below="@+id/recievebox"
+            android:layout_alignRight="@+id/recievebox"
+            android:layout_alignLeft="@+id/recievebox"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <ImageButton
+            android:id="@+id/sendbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/outboxnew"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发件箱"
+            android:layout_below="@+id/sendbox"
+            android:layout_alignRight="@+id/sendbox"
+            android:layout_alignLeft="@+id/sendbox"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/mail_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/mail_newmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="写信"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

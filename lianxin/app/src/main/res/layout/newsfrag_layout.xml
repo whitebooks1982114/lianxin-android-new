@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <Button
+            android:id="@+id/newsfrag_zhongyang_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中央精神"
+            android:textColor="@drawable/news_title"
+            android:background="@android:color/transparent"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/newsfrag_shagnji_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上级动态"
+            android:textColor="@drawable/news_title"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/newsfrag_jiceng_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基层声音"
+            android:textColor="@drawable/news_title"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <com.example.whitebooks.lianxin_android.utilclass.CircleTextView
+        android:id="@+id/newsfrag_headtitlenews_textview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textColor="@android:color/holo_red_light"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/news_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="department">
+        <item>点击选取</item>
+        <item>公司领导</item>
+        <item>办公室</item>
+        <item>人资部</item>
+        <item>财务部</item>
+        <item>党群部</item>
+        <item>安监部</item>
+        <item>监审部</item>
+        <item>运检部</item>
+        <item>营销部</item>
+        <item>调控中心</item>
+        <item>建设部</item>
+        <item>发策部</item>
+        <item>其他</item>
+    </string-array>
+    
+    <string-array name="days">
+        <item>一天</item>
+        <item>二天</item>
+        <item>三天</item>
+        <item>四天</item>
+        <item>五天</item>
+        <item>六天</item>
+        <item>七天</item>
+    </string-array>
+
+</resources>
